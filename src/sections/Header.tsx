@@ -1,9 +1,12 @@
 import clsx from 'clsx';
 import { useState } from 'react';
-import { Link as LinkScroll } from 'react-scroll';
+import { LinkProps, Link as LinkScroll } from 'react-scroll';
 
-const NavLink = ({ title }: { title: string }) => (
-  <LinkScroll className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5">
+const NavLink = ({ title, to }: LinkProps) => (
+  <LinkScroll
+    to={to}
+    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+  >
     {title}
   </LinkScroll>
 );
@@ -26,9 +29,9 @@ const Header = () => {
             <nav className="max-lg:relative max-lg:z-2 max-lg:my-auto">
               <ul className="flex max-lg:block max-lg:px-12">
                 <li className="nav-li">
-                  <NavLink title="features" />
+                  <NavLink to="features" title="features" />
                   <div className="dot" />
-                  <NavLink title="pricing" />
+                  <NavLink to="pricing" title="pricing" />
                 </li>
                 <li className="nav-logo">
                   <LinkScroll
@@ -47,9 +50,9 @@ const Header = () => {
                   </LinkScroll>
                 </li>
                 <li className="nav-li">
-                  <NavLink title="faq" />
+                  <NavLink to="faq" title="faq" />
                   <div className="dot" />
-                  <NavLink title="download" />
+                  <NavLink to="download" title="download" />
                 </li>
               </ul>
             </nav>
