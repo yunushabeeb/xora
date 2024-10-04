@@ -40,9 +40,16 @@ const Header = () => {
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5">
-        <a href="" className="lg:hidden flex-1 cursor-pointer z-2">
+        <LinkScroll
+          to="hero"
+          offset={-250}
+          spy
+          smooth
+          className="lg:hidden flex-1 cursor-pointer z-2"
+        >
           <img src="/images/xora.svg" width={115} height={55} alt="logo" />
-        </a>
+        </LinkScroll>
+
         <div
           className={clsx(
             'w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 max-lg:opacity-0',
