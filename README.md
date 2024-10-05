@@ -24,7 +24,7 @@
 
 The foundation of this project comes from an in-depth tutorial available on the YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. I encourage you to check it out if you prefer visual learning.
 
-<a href="https://youtu.be/ukiGFmZ32YA?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+<a href="https://youtu.be/ukiGFmZ32YA?feature=shared" target="_blank"><img src="/public/images/youtube.svg" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
