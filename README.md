@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+<div align="center">
+  <br />
+   <img src="/public/images/banner.png" alt="react.js" />
+  <br />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <div>
+    <img src="/public/images/reactjs.svg" alt="react.js" />
+    <img src="/public/images/vite.svg" alt="vite" />
+    <img src="/public/images/tailwindcss.svg" alt="tailwindcss" />
+  </div>
 
-Currently, two official plugins are available:
+<h3 align="center">Modern UI/UX SaaS Website</h3>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 <a name="table">Table of Contents</a>
 
-## Expanding the ESLint configuration
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🔗 [Assets](#**links**)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚨 Tutorial
 
-- Configure the top-level `parserOptions` property like this:
+The foundation of this project comes from an in-depth tutorial available on the YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. I encourage you to check it out if you prefer visual learning.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<a href="https://youtu.be/ukiGFmZ32YA?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+
+## <a name="introduction">🤖 Introduction</a>
+
+This project, now customized by me, showcases a modern UI/UX SaaS website built with React.js, Vite, and Tailwind CSS. It serves as a reference for anyone looking to develop sleek and responsive web applications with advanced UI features. I've added some tweaks to better suit my preferences and styling. Feel free to connect with me for any suggestions, or if you encounter any issues.
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Vite
+- React.js
+- Tailwind CSS
+
+## <a name="features">🔋 Features</a>
+
+👉 **Stunning Sections**: Includes hero, features, pricing (monthly/yearly), FAQ, testimonials, and download software
+sections.
+
+👉 **Smooth Animations**: Complex CSS for fluid animations and eye-catching effects.
+
+👉 **Cool CSS Gradients**: Beautiful gradient effects using CSS `before` and `after` pseudo-elements.
+
+👉 **Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
+
+👉 **Optimized Performance**: Built for fast loading and an optimized experience.
+
+👉 **Pixel Perfect Design**: Ensures flawless responsiveness across all devices and screen sizes.
+
+and many more, including code architecture and reusability
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/d-code-h/saas_landing_page.git
+cd saas_landing_page
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**Installation**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Install the project dependencies using npm:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+**Running the Project**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
