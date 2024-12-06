@@ -1,13 +1,15 @@
+// Exporting features data for the website, which highlights key features of the product
 export const features = [
   {
-    id: '0',
-    icon: '/images/feature-1.png',
-    caption: 'Easy integration',
-    title: 'Work smarter not harder',
-    text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+    id: '0', // Unique identifier for the feature
+    icon: '/images/feature-1.png', // Path to the feature icon image
+    caption: 'Easy integration', // Short description of the feature
+    title: 'Work smarter not harder', // Title for the feature
+    text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.", // Detailed explanation of the feature
     button: {
-      icon: '/images/magictouch.svg',
-      title: 'Watch the demo',
+      // Button related to this feature
+      icon: '/images/magictouch.svg', // Icon for the button
+      title: 'Watch the demo', // Button label
     },
   },
   {
@@ -15,7 +17,7 @@ export const features = [
     icon: '/images/feature-2.png',
     caption: 'Secure & trustworthy',
     title: 'Sleep easy, we got your back',
-    text: 'Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.',
+    text: 'Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.',
     button: {
       icon: '/images/docs.svg',
       title: 'Read the docs',
@@ -23,35 +25,37 @@ export const features = [
   },
 ];
 
+// Exporting details data for specific capabilities or benefits of the product
 export const details = [
   {
-    id: '0',
-    icon: '/images/detail-1.png',
-    title: 'AI automated video editing',
+    id: '0', // Unique identifier for the detail
+    icon: '/images/detail-1.png', // Path to the detail icon image
+    title: 'AI automated video editing', // Title describing the feature
   },
   {
     id: '1',
     icon: '/images/detail-2.png',
-    title: 'Collaborate with your team',
+    title: 'Collaborate with your team', // Title for this feature
   },
   {
     id: '2',
     icon: '/images/detail-3.png',
-    title: 'Ultra fast cloud-engine',
+    title: 'Ultra fast cloud-engine', // Title for this feature
   },
   {
     id: '3',
     icon: '/images/detail-4.png',
-    title: '24 / 7 Customer support',
+    title: '24 / 7 Customer support', // Title for this feature
   },
 ];
 
+// Exporting FAQ (Frequently Asked Questions) data with common customer inquiries
 export const faq = [
   {
-    id: '0',
-    question: 'How easy is it to setup Xora?',
+    id: '0', // Unique identifier for the FAQ entry
+    question: 'How easy is it to setup Xora?', // The question
     answer:
-      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.',
+      'Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.', // The answer to the question
   },
   {
     id: '1',
@@ -109,21 +113,22 @@ export const faq = [
   },
 ];
 
+// Exporting pricing plans data with features included for each plan
 export const plans = [
   {
-    id: '0',
-    title: 'Core',
-    priceMonthly: 19,
-    priceYearly: 12,
-    caption: 'Best for solo creators',
+    id: '0', // Unique identifier for the plan
+    title: 'Core', // Name of the plan
+    priceMonthly: 19, // Monthly price for the plan
+    priceYearly: 12, // Yearly price for the plan
+    caption: 'Best for solo creators', // Brief description of who this plan is ideal for
     features: [
-      '100MB Cloud storage',
-      '100+ prompt templates',
-      '5 projects',
-      '24/7 support',
+      '100MB Cloud storage', // Feature 1 of the plan
+      '100+ prompt templates', // Feature 2 of the plan
+      '5 projects', // Feature 3 of the plan
+      '24/7 support', // Feature 4 of the plan
     ],
-    icon: '/images/circle.svg',
-    logo: '/images/plan-1.png',
+    icon: '/images/circle.svg', // Icon representing the plan
+    logo: '/images/plan-1.png', // Logo image for the plan
   },
   {
     id: '1',
@@ -157,6 +162,7 @@ export const plans = [
   },
 ];
 
+// Array of testimonial data
 export const testimonials = [
   {
     id: '0',
@@ -208,13 +214,14 @@ export const testimonials = [
   },
 ];
 
+// Array of company logo data
 export const logos = [
   {
     id: '0',
-    title: 'Afterpay',
-    url: '/images/logos/afterpay.svg',
-    width: 156,
-    height: 48,
+    title: 'Afterpay', // Company name
+    url: '/images/logos/afterpay.svg', // Logo image path
+    width: 156, // Logo width
+    height: 48, // Logo height
   },
   {
     id: '1',
@@ -246,6 +253,7 @@ export const logos = [
   },
 ];
 
+// SVG component for iOS icon
 export const Ios = () => {
   return (
     <svg
@@ -267,6 +275,7 @@ export const Ios = () => {
   );
 };
 
+// SVG component for Android icon
 export const Android = () => {
   return (
     <svg
@@ -289,86 +298,81 @@ export const Android = () => {
         fill="#EAEDFF"
       />
       <path
-        d="M25.0844 11.3955L30.1368 14.214C31.5112 14.9832 31.5112 17.016 30.1368 17.7853L25.0844 20.6016L20.3338 15.9996L25.0844 11.3955Z"
+        d="M25.0844 11.3955L30.1368 14.214C31.5112 14.9832 31.5112 17.016 30.1368 17.7853L25.0844 20.6016L19.8992 17.5664L25.0844 11.3955Z"
         fill="#EAEDFF"
       />
     </svg>
   );
 };
 
+// Define the Windows component
 export const Windows = () => {
   return (
     <svg
-      width="33"
-      height="32"
-      viewBox="0 0 33 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      width="33" // Set the width of the SVG
+      height="32" // Set the height of the SVG
+      viewBox="0 0 33 32" // Set the viewBox for scaling the SVG
+      fill="none" // Set the fill color to none (transparent)
+      xmlns="http://www.w3.org/2000/svg" // Set the XML namespace for the SVG
     >
+      {/* Define the first path for the left side of the Windows icon */}
       <path
         d="M17.674 2.64859L29.4077 0.0307338C30.3171 -0.165605 31.1678 0.603406 31.1678 1.63418V12.7273C31.1678 13.6272 30.5078 14.3635 29.7011 14.3635H17.9674C17.1607 14.3635 16.5006 13.6272 16.5006 12.7273V4.25204C16.5006 3.46669 16.9846 2.79585 17.674 2.64859Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the second path for the right side of the Windows icon */}
       <path
         d="M17.674 29.3507L29.4077 31.9686C30.3171 32.1649 31.1678 31.3959 31.1678 30.3651V19.272C31.1678 18.3721 30.5078 17.6358 29.7011 17.6358H17.9674C17.1607 17.6358 16.5006 18.3721 16.5006 19.272V27.7473C16.5006 28.5326 16.9846 29.2035 17.674 29.3507Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the third path for the bottom left side of the Windows icon */}
       <path
         d="M11.7925 3.82676L2.99217 5.90466C2.31748 6.06827 1.8335 6.73912 1.8335 7.50811V12.7275C1.8335 13.6273 2.49352 14.3636 3.30021 14.3636H12.1005C12.9072 14.3636 13.5672 13.6273 13.5672 12.7275V5.41383C13.5672 4.38305 12.7018 3.5977 11.7925 3.82676Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the fourth path for the bottom right side of the Windows icon */}
       <path
         d="M2.99217 26.0948L11.7925 28.1727C12.7018 28.4018 13.5672 27.6164 13.5672 26.5856V19.272C13.5672 18.3721 12.9072 17.6358 12.1005 17.6358H3.30021C2.49352 17.6358 1.8335 18.3721 1.8335 19.272V24.4913C1.8335 25.2603 2.31748 25.9312 2.99217 26.0948Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
     </svg>
   );
 };
 
+// Define the Web component
 export const Web = () => {
   return (
     <svg
-      width="33"
-      height="32"
-      viewBox="0 0 33 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      width="33" // Set the width of the SVG
+      height="32" // Set the height of the SVG
+      viewBox="0 0 33 32" // Set the viewBox for scaling the SVG
+      fill="none" // Set the fill color to none (transparent)
+      xmlns="http://www.w3.org/2000/svg" // Set the XML namespace for the SVG
     >
+      {/* Define the first path for the top part of the Web icon */}
       <path
         d="M12.5484 0.847986C11.8284 2.95995 11.3164 5.15192 10.9164 7.34388C14.6285 6.92789 18.3727 6.92789 22.0848 7.34388C21.6848 5.15192 21.1728 2.97595 20.4528 0.847986C20.4307 0.759613 20.4238 0.686493 20.4164 0.607564C20.4131 0.572174 20.4097 0.535616 20.4048 0.495992C19.1567 0.191997 17.8447 0 16.5006 0C15.1405 0 13.8445 0.191997 12.5804 0.495992C12.5741 0.546895 12.5728 0.592737 12.5715 0.637543C12.5696 0.7054 12.5677 0.770896 12.5484 0.847986Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the second path for the top-right part of the Web icon */}
       <path
         d="M24.8211 7.67982C26.8852 8.03181 28.9172 8.52781 30.9333 9.1358C29.3493 5.82385 26.6771 3.15189 23.365 1.56792C23.989 3.56789 24.485 5.61585 24.8211 7.67982Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the third path for the bottom-left part of the Web icon */}
       <path
         d="M9.54034 30.2556C9.51633 30.2556 9.48833 30.2636 9.46033 30.2716C9.43233 30.2796 9.40433 30.2876 9.38033 30.2876C6.27619 28.7517 3.74809 26.2077 2.19602 23.1037C2.19602 23.0797 2.20402 23.0517 2.21202 23.0237C2.22002 22.9957 2.22802 22.9677 2.22802 22.9437C4.1801 23.5197 6.19619 23.9517 8.19628 24.2877C8.54829 26.3037 8.96431 28.3037 9.54034 30.2556Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the fourth path for the bottom-right part of the Web icon */}
       <path
         d="M30.8053 23.1197C29.2213 26.3037 26.5811 28.8797 23.365 30.4316C23.973 28.3997 24.485 26.3517 24.8211 24.2877C26.8372 23.9517 28.8212 23.5197 30.7733 22.9437C30.7637 22.9823 30.7772 23.0208 30.7896 23.0558C30.7977 23.079 30.8053 23.1006 30.8053 23.1197Z"
-        fill="#EAEDFF"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
+      {/* Define the fifth path for the left side of the Web icon */}
       <path
-        d="M9.54041 1.74401C8.96438 3.69598 8.54836 5.67994 8.21235 7.69591C6.14826 8.01591 4.10017 8.5279 2.06808 9.13589C3.62015 5.91994 6.19626 3.27998 9.3804 1.69601C9.4044 1.69601 9.4324 1.70801 9.4604 1.72001C9.4884 1.73201 9.51641 1.74401 9.54041 1.74401Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M7.84432 21.5836C5.63622 21.1836 3.46013 20.6716 1.34804 19.9516C1.27094 19.9324 1.20545 19.9305 1.13759 19.9286C1.09278 19.9273 1.04693 19.926 0.996021 19.9196C0.692008 18.6557 0.5 17.3597 0.5 15.9997C0.5 14.6557 0.692008 13.3437 0.996021 12.0958C1.03565 12.0908 1.07221 12.0874 1.1076 12.0841C1.18653 12.0767 1.25966 12.0699 1.34804 12.0478C3.47613 11.3438 5.63622 10.8158 7.84432 10.4158C7.4443 14.1277 7.4443 17.8717 7.84432 21.5836Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M32.005 19.9196C32.309 18.6557 32.501 17.3597 32.501 15.9997C32.501 14.6557 32.309 13.3597 32.005 12.0958C31.877 12.0958 31.781 12.0798 31.653 12.0478C29.5409 11.3278 27.3488 10.8158 25.1567 10.4158C25.5727 14.1277 25.5727 17.8717 25.1567 21.5836C27.3488 21.1836 29.5249 20.6556 31.653 19.9516C31.7301 19.9324 31.7956 19.9305 31.8635 19.9286C31.9083 19.9273 31.9541 19.926 32.005 19.9196Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M22.0848 24.6554C21.6848 26.8633 21.1728 29.0393 20.4528 31.1513C20.4307 31.2396 20.4238 31.3128 20.4164 31.3917C20.4131 31.4271 20.4097 31.4636 20.4048 31.5033C19.1567 31.8073 17.8447 31.9993 16.5006 31.9993C15.1405 31.9993 13.8445 31.8073 12.5804 31.5033C12.5741 31.4524 12.5728 31.4065 12.5715 31.3617C12.5696 31.2939 12.5677 31.2284 12.5484 31.1513C11.8444 29.0233 11.3164 26.8633 10.9164 24.6554C12.7724 24.8634 14.6285 25.0074 16.5006 25.0074C18.3727 25.0074 20.2448 24.8634 22.0848 24.6554Z"
-        fill="#EAEDFF"
-      />
-      <path
-        d="M10.4793 22.0209C14.4812 22.5258 18.5205 22.5258 22.5224 22.0209C23.0274 18.0192 23.0274 13.9802 22.5224 9.97847C18.5205 9.47358 14.4812 9.47358 10.4793 9.97847C9.97434 13.9802 9.97434 18.0192 10.4793 22.0209Z"
-        fill="#EAEDFF"
+        d="M9.54041 1.74401C8.96438 3.69598 8.54836 5.67994 8.21235 7.69591C6.14826 8.01591 4.10017 8.54394 2.212 9.13594C3.74809 11.2399 6.27619 13.7839 9.38033 15.3279C9.40433 15.3279 9.43233 15.3359 9.46033 15.3439C9.48833 15.3519 9.51633 15.3599 9.54034 15.3599C12.6445 15.3599 15.1725 13.7839 16.7246 11.6879C16.7246 11.6879 17.7326 10.6959 18.7446 10.6959C19.7566 10.6959 20.7646 11.6879 20.7646 11.6879C22.3167 13.7839 24.8447 15.3599 27.9488 15.3599C29.5089 15.3599 31.1809 14.5659 31.7648 13.2079C32.1968 12.1739 31.6848 10.8839 30.7738 9.67992C29.5178 7.91592 28.4537 6.19991 27.5406 4.93591C27.1486 4.32191 26.6766 3.31991 26.2366 2.72791C24.6126 1.21991 22.6845 0 20.4166 0.60792C21.1727 2.97592 21.6847 5.15191 22.0847 7.34391C18.3727 6.92791 14.6285 6.92791 10.9164 7.34391C11.3164 5.15191 11.8284 2.95991 12.5484 0.84791"
+        fill="#EAEDFF" // Set the fill color of the path to a light color
       />
     </svg>
   );
@@ -378,25 +382,25 @@ export const links = [
   {
     id: '0',
     title: 'Ios',
-    icon: <Ios />,
+    icon: <Ios />, // React component for the Ios icon
     url: '#',
   },
   {
     id: '1',
     title: 'Android',
-    icon: <Android />,
+    icon: <Android />, // React component for the Android icon
     url: '#',
   },
   {
     id: '2',
     title: 'Windows',
-    icon: <Windows />,
+    icon: <Windows />, // React component for the Windows icon
     url: '#',
   },
   {
     id: '3',
     title: 'Web',
-    icon: <Web />,
+    icon: <Web />, // React component for the Web icon
     url: '#',
   },
 ];
@@ -405,25 +409,25 @@ export const socials = [
   {
     id: '0',
     title: 'x',
-    icon: '/images/socials/x.svg',
+    icon: '/images/socials/x.svg', // Path to the 'x' social icon SVG
     url: '#',
   },
   {
     id: '1',
     title: 'Threads',
-    icon: '/images/socials/threads.svg',
+    icon: '/images/socials/threads.svg', // Path to the 'Threads' social icon SVG
     url: '#',
   },
   {
     id: '2',
     title: 'Instagram',
-    icon: '/images/socials/instagram.svg',
+    icon: '/images/socials/instagram.svg', // Path to the 'Instagram' social icon SVG
     url: '#',
   },
   {
     id: '3',
     title: 'Discord',
-    icon: '/images/socials/discord.svg',
+    icon: '/images/socials/discord.svg', // Path to the 'Discord' social icon SVG
     url: '#',
   },
 ];

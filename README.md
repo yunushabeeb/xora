@@ -1,89 +1,80 @@
-<div align="center">
-  <br />
-   <img src="/public/images/banner.png" alt="react.js" />
-  <br />
+# Xora 🌐
 
-  <div>
-    <img src="/public/images/reactjs.svg" alt="react.js" />
-    <img src="/public/images/vite.svg" alt="vite" />
-    <img src="/public/images/tailwindcss.svg" alt="tailwindcss" />
-  </div>
+Welcome to the **Xora** project! This is a modern, responsive landing page built using **React**, **Vite**, and **TailwindCSS**. The project is intended to provide a clean, user-friendly interface for showcasing a SaaS (Software as a Service) product.
 
-<h3 align="center">Modern UI/UX SaaS Website</h3>
-</div>
+![xora saas landing page](/public/xora.png)
 
-## 📋 <a name="table">Table of Contents</a>
+## Features ✨
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#**links**)
+- **React** for building the user interface ⚛️
+- **TailwindCSS** for responsive and customizable styling 🎨
+- **Vite** for fast development and building 🚀
+- **TypeScript** for type safety 🛡️
+- **ESLint** for code linting and quality control 🧹
+- **React Scroll** for smooth scrolling interactions 🏞️
+- **React Slidedown** for FAQ item animations 📜
 
-## 🚨 Tutorial
+## Setup Instructions 🛠️
 
-The foundation of this project comes from an in-depth tutorial available on the YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. I encourage you to check it out if you prefer visual learning.
-
-<a href="https://youtu.be/ukiGFmZ32YA?feature=shared" target="_blank"><img src="/public/images/youtube.svg" /></a>
-
-## <a name="introduction">🤖 Introduction</a>
-
-This project, now customized by me, showcases a modern UI/UX SaaS website built with React.js, Vite, and Tailwind CSS. It serves as a reference for anyone looking to develop sleek and responsive web applications with advanced UI features. I've added some tweaks to better suit my preferences and styling. Feel free to connect with me for any suggestions, or if you encounter any issues.
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Vite
-- React.js
-- Tailwind CSS
-
-## <a name="features">🔋 Features</a>
-
-👉 **Stunning Sections**: Includes hero, features, pricing (monthly/yearly), FAQ, testimonials, and download software
-sections.
-
-👉 **Smooth Animations**: Complex CSS for fluid animations and eye-catching effects.
-
-👉 **Cool CSS Gradients**: Beautiful gradient effects using CSS `before` and `after` pseudo-elements.
-
-👉 **Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
-
-👉 **Optimized Performance**: Built for fast loading and an optimized experience.
-
-👉 **Pixel Perfect Design**: Ensures flawless responsiveness across all devices and screen sizes.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/d-code-h/saas_landing_page.git
-cd saas_landing_page
+git clone https://github.com/d-code-h/xora.git
+cd xora
 ```
 
-**Installation**
+### 2. Install Dependencies
 
-Install the project dependencies using npm:
+`npm install`
 
-```bash
-npm install
-```
+### 3. Run in Development Mode
 
-**Running the Project**
+`npm run dev`
 
-```bash
-npm run dev
-```
+This will start the development server. Open your browser and go to http://localhost:5173 to view the landing page.
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+### 4. Build the Project for Production
+
+`npm run build`
+
+This will bundle the project for production in the dist folder.
+
+### 5. Preview the Built Project
+
+`npm run preview`
+
+This will serve the production build locally for previewing.
+
+## Available Scripts 📝
+
+- **npm run dev:** Start the development server.
+- **npm run build:** Build the project for production.
+- **npm run preview:** Preview the production build.
+- **npm run lint:** Lint the codebase using ESLint.
+
+## Dependencies 📦
+
+- **clsx:** Utility for conditionally combining class names.
+- **react:** JavaScript library for building user interfaces.
+- **react-countup:** A component to animate counting numbers.
+- **react-dom:** Package to interact with the DOM.
+- **react-scroll:** Smooth scrolling functionality for navigation.
+- **react-slidedown:** Slide-down animations for FAQs.
+
+## Dev Dependencies 🛠️
+
+- **@eslint/js:** ESLint configuration for JavaScript.
+- **@vitejs/plugin-react:** Vite plugin for React.
+- **autoprefixer:** PostCSS plugin to add vendor prefixes.
+- **eslint:** Tool for identifying and fixing linting errors.
+- **tailwindcss:** Utility-first CSS framework for fast UI development.
+- **typescript:** JavaScript with static types.
+- **vite:** Next-generation, fast bundler.
+
+## Contributing 🤝
+
+We welcome contributions! Feel free to fork this repository and create pull requests with your improvements.
+
+## License 📄
+
+This project is licensed under the MIT License

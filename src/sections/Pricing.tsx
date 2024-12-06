@@ -1,20 +1,24 @@
-import clsx from 'clsx';
-import { useState } from 'react';
-import { Element } from 'react-scroll';
-import { plans } from '../constants';
-import CountUp from 'react-countup';
-import Button from '../components/Button';
+import clsx from 'clsx'; // Utility for conditional class names
+import { useState } from 'react'; // React hook for managing state
+import { Element } from 'react-scroll'; // For smooth scrolling and navigation
+import { plans } from '../constants'; // Array of pricing plans
+import CountUp from 'react-countup'; // Library for animated number counting
+import Button from '../components/Button'; // Reusable button component
 
 const Pricing = () => {
-  const [monthly, setMonthly] = useState(false);
+  const [monthly, setMonthly] = useState(false); // State for toggling between monthly and annual plans
+
   return (
     <section>
       <Element name="pricing">
         <div className="container">
+          {/* Header Section */}
           <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
             <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
               Flexible pricing for teams of all sizes
             </h3>
+
+            {/* Toggle for Monthly/Annual Pricing */}
             <div className="relative z-4 mx-auto flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
               <button
                 className={clsx('pricing-head_btn', monthly && 'text-p4')}
@@ -35,6 +39,8 @@ const Pricing = () => {
                 )}
               />
             </div>
+
+            {/* Background Images */}
             <div className="pricing-bg">
               <img
                 src="/images/bg-outlines.svg"
@@ -53,16 +59,19 @@ const Pricing = () => {
             </div>
           </div>
 
-          {/* pricing section */}
+          {/* Pricing Plans */}
           <div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
             {plans.map((plan, index) => (
               <div
                 key={plan.id}
                 className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]"
               >
+                {/* Highlighted Plan Background */}
                 {index === 1 && (
                   <div className="g4 absolute h-330 left-0 right-0 top-0 z-1 rounded-tl-3xl rounded-tr-3xl" />
                 )}
+
+                {/* Plan Icon */}
                 <div
                   className={clsx(
                     'absolute left-0 right-0 z-2 flex items-center justify-center',
@@ -78,6 +87,8 @@ const Pricing = () => {
                     )}
                   />
                 </div>
+
+                {/* Plan Details */}
                 <div
                   className={clsx(
                     'relative flex flex-col items-center',
@@ -112,6 +123,8 @@ const Pricing = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Plan Caption */}
                 <div
                   className={clsx(
                     'body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4',
@@ -120,6 +133,8 @@ const Pricing = () => {
                 >
                   {plan.caption}
                 </div>
+
+                {/* Features List */}
                 <ul className="mx-auto space-y-4 xl:px-7">
                   {plan.features.map((feature) => (
                     <li
@@ -135,10 +150,13 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
+
+                {/* Call-to-Action Button */}
                 <div className="mt-10 flex w-full justify-center">
                   <Button icon={plan.icon}>Get Started</Button>
                 </div>
 
+                {/* Special Offer */}
                 {index === 1 && (
                   <p className="-compact mt-9 text-center text-p3 before:mx-2.5 before:content-['-'] after:mx-2.5 after:content-['-']">
                     Limited time offer
