@@ -75,6 +75,6 @@ This will serve the production build locally for previewing.
 
 We welcome contributions! Feel free to fork this repository and create pull requests with your improvements.
 
-## License 📄
+## License ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
